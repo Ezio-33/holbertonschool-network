@@ -36,6 +36,7 @@
 ### man or help:
 
 - ifconfig
+- ip
 - telnet
 - nc
 - cut
