@@ -1,0 +1,73 @@
+The journey of a query: From the address bar to the Google page
+
+Introduction:
+Hello everyone! I am currently undergoing training at Holberton School, where I am learning the fundamentals of software development with the ambition to specialize in machine learning.
+This article was written as part of a project for my degree course and, as required, will be published in English.
+Today, I will take you behind the scenes of an action that we perform dozens of times a day: typing a URL in our browser. Let's dive into the fascinating journey of a web request, from your keyboard to Google's servers.
+
+1. DNS Resolution: The GPS of the Internet
+
+When you type "www.google.com" and press Enter, your browser doesn't immediately know where to go. It needs to translate this domain name into an IP address. This is where the DNS (Domain Name System) comes in.
+
+- Your browser first checks its local cache.
+- If the address is not in the cache, it queries your ISP's DNS server.
+- If necessary, the request goes up to the root DNS servers.
+- Once the IP address is obtained, your browser knows where to send its request.
+
+2. Establishing a Secure Connection: The Encrypted Tunnel
+
+With the IP address in hand, your computer establishes a secure connection with Google's server using the HTTPS protocol.
+
+- Your browser sends a request to the server to establish a secure connection.
+- The server responds with its SSL certificate containing its public key.
+- Your browser verifies the certificate and generates a session key, which it encrypts with the server's public key.
+- The server decrypts the session key with its private key. Now, the browser and the server can exchange data securely.
+
+3. Firewall: The Web Customs Officer
+
+Once the secure connection is established, your encrypted request passes through several firewalls.
+
+- These virtual guardians check if your request is legitimate.
+- They analyze the data packets to detect any suspicious activity.
+- If everything is in order, your request is allowed to continue its path.
+
+4. Load Balancer: The Web Traffic Conductor
+
+Google receives millions of requests per second. To handle this colossal traffic, they use load balancers.
+
+- These intelligent systems distribute incoming requests across multiple servers.
+- They ensure a fair distribution of workload.
+- They also check the health of servers, redirecting traffic away from failing servers.
+
+5. Web Server: Google's Storefront
+
+Once your request is assigned to a specific server, the web server comes into play.
+
+- It interprets your HTTP request.
+- It prepares the necessary static resources (HTML, CSS, JavaScript).
+- For dynamic content, it calls the application server.
+
+6. Application Server: The Brain of the Operation
+
+This is where the real magic happens. The application server dynamically generates the page you will see.
+
+- It executes complex algorithms to personalize your search experience.
+- It takes into account your preferences, location, and many other factors.
+- It orchestrates the creation of the search results page unique to your request.
+
+7. Database: Google's Memory
+
+To provide the most relevant results, the application server queries enormous databases.
+
+- These databases contain indexes of billions of web pages.
+- They are constantly updated by Google's indexing robots.
+- Sophisticated algorithms are used to extract the most relevant results in a fraction of a second.
+
+Conclusion:
+This fascinating journey, from typing the URL to displaying the search results page, takes place in less than a second. It is the result of a colossal infrastructure and constant technological innovations.
+
+As an aspiring machine learning specialist, I am particularly intrigued by how AI and machine learning are integrated at every step of this process, from optimizing DNS queries to personalizing search results.
+
+I hope this article has helped you better understand the complexity of requests when you visit your favorite websites.
+
+Feel free to ask me questions or share your thoughts in the comments.
